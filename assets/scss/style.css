@@ -17,92 +17,6 @@ html {
   font-size: 18px;
 }
 
-/* Главная страница начало*/
-.main {
-  margin: 2%;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  text-align: left;
-  padding: 0px 100px;
-  font-weight: 400;
-
-}
-
-.spicok {
-  color: #0f9900;
-  text-decoration: underline;
-}
-
-.main_text {
-
-
-}
-
-.main_text1{
-  line-height: 2em;
-  margin-bottom: -20px; 
-}
-
-.main_text__text2{
-  line-height: 2em;
-  margin-bottom: -10px; 
-}
-
-.main_text__text3{
-  line-height: 2em;
-  margin-bottom: -10px; 
-}
-
-.main_text__text4{
-  line-height: 2em;
-
-}
-
-/* Главная страница конец*/
-
-/* Главная страница начало*/
-.main {
-  margin: 2%;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  text-align: left;
-  padding: 0px 100px;
-  font-weight: 400;
-
-}
-
-.spicok {
-  color: #0f9900;
-  text-decoration: underline;
-}
-
-.main_text {
-
-
-}
-
-.main_text1{
-  line-height: 2em;
-  margin-bottom: -20px; 
-}
-
-.main_text__text2{
-  line-height: 2em;
-  margin-bottom: -10px; 
-}
-
-.main_text__text3{
-  line-height: 2em;
-  margin-bottom: -10px; 
-}
-
-.main_text__text4{
-  line-height: 2em;
-
-}
-
-/* Главная страница конец*/
-
 /* ПРАЙС начало */
 .section_price {
   margin-bottom: 5%;
@@ -283,4 +197,116 @@ html {
   }
 }
 
-/* ФУТЕР конец *//*# sourceMappingURL=style.css.map */
+/* ФУТЕР конец */
+/* ХЭДЕР начало */
+header {
+  width: 100vw;
+}
+header ul {
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+header ul :first-child::before {
+  content: url(/assets/images/leaf-logo.png);
+  position: absolute;
+  left: 2vw;
+}
+header a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 250%;
+  color: #263633;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+/* ХЭДЕР конец */
+/* ПЕРВЫЙ БЛОК начало */
+.first-block {
+  width: 100vw;
+  height: 70vh;
+  background-color: #DBF0D9;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .first-block {
+    width: 100vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.first-block .first-block__logo {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.first-block .first-block__logo img {
+  margin-top: 10%;
+  margin-left: 5%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.first-block .first-block__h1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.first-block .first-block__h1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 129%;
+  color: #eb9c45;
+  text-align: center;
+}
+.first-block .first-block__h2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.first-block .first-block__h2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 129%;
+  color: rgba(84, 46, 39, 0.8);
+  text-align: left;
+  margin-left: 13.5%;
+}
+.first-block .first-block__button {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.button_leave-application {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 65px;
+  background: linear-gradient(90deg, rgb(51, 204, 51), rgb(15, 153, 0) 100%);
+  cursor: pointer;
+  margin-left: 50%;
+  text-transform: uppercase;
+  height: 12vh;
+  width: 17vw;
+}
+.button_leave-application:active {
+  box-shadow: rgba(15, 153, 0, 0.3) 3px 3px 3px 3px;
+}
+.button_leave-application:hover {
+  text-decoration: underline;
+}
+
+/* ПЕРВЫЙ БЛОК конец *//*# sourceMappingURL=style.css.map */
