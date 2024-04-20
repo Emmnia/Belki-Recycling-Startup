@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @font-face {
   font-family: "Montserrat";
   src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
@@ -176,7 +177,7 @@ html {
   font-size: 20px;
   line-height: 40px;
   color: #0f9900;
-  background-color: #DBF0D9;
+  background-color: #dbf0d9;
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -240,7 +241,7 @@ header a:hover {
 .first-block {
   width: 100vw;
   height: 70vh;
-  background-color: #DBF0D9;
+  background-color: #dbf0d9;
   display: grid;
   grid-template-columns: 2fr 5fr;
   grid-template-rows: repeat(3, 1fr);
@@ -320,7 +321,7 @@ header a:hover {
 /* ПЕРВЫЙ БЛОК конец */
 /* РАСХЛАМЛЕНИЕ начало */
 .section_benefit {
-  background-color: #DBF0D9;
+  background-color: #dbf0d9;
 }
 @media screen and (max-width: 425px) {
   .section_benefit {
@@ -437,7 +438,7 @@ header a:hover {
 
 /* ДЛЯ КОГО? начало */
 .section_service {
-  background-color: #DBF0D9;
+  background-color: #dbf0d9;
 }
 .section_service .title {
   font-family: "Montserrat";
@@ -632,9 +633,260 @@ header a:hover {
 }
 
 /* ДЛЯ КОГО? конец */
+/* О НАС */
+.section_us {
+  padding: 5rem 15rem 5rem 15rem;
+}
+.section_us h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  color: #542e27;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  padding-top: 30px;
+  padding-bottom: 3rem;
+}
+
+.us_container {
+  display: grid;
+  grid-template-areas: "us_container__img us_container__content";
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.us_container .us_container__img {
+  grid-area: us_container__img;
+}
+.us_container .us_container__img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.us_container .us_container__content {
+  grid-area: us_container__content;
+  padding-left: 3rem;
+  font-family: "Montserrat";
+  color: #542e27;
+}
+
+.txt-top {
+  padding-bottom: 1rem;
+}
+
+.awards {
+  padding: 2rem;
+}
+
+.award {
+  display: flex;
+  align-items: center;
+}
+.award i {
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  color: #0f9900;
+}
+
+/* ОТЗЫВЫ */
+.section_testimonials {
+  height: 100vh;
+  padding-bottom: 10rem;
+}
+.section_testimonials h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  color: #542e27;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  padding-top: 30px;
+}
+
+.slider {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.slider__nav {
+  width: 12px;
+  height: 12px;
+  margin: 2rem 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid #dbf0d9;
+  outline-offset: -6px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  backface-visibility: hidden;
+}
+
+.slider__nav:checked {
+  animation: check 0.4s linear forwards;
+}
+
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+  left: 10%;
+}
+
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+  left: -70%;
+}
+
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+  left: -150%;
+}
+
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+  left: -230%;
+}
+
+.slider__nav:checked:nth-of-type(5) ~ .slider__inner {
+  left: -310%;
+}
+
+.slider__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  max-height: 100%;
+  transition: left 0.4s;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.slider__contents {
+  font-family: "Montserrat";
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  max-height: 100%;
+}
+
+.slide-pic {
+  max-width: 100%;
+  max-height: 100%;
+}
+.slide-pic img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+figure.snip1139 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 310px;
+  max-width: 510px;
+  max-height: 100%;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+}
+
+figure.snip1139 * {
+  box-sizing: border-box;
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+figure.snip1139 img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure.snip1139 blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 50px 25px 60px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+  top: 0px;
+  left: 0px;
+  color: #542e27;
+}
+
+figure.snip1139 blockquote:before,
+figure.snip1139 blockquote:after {
+  font-family: "FontAwesome";
+  content: "“";
+  position: absolute;
+  font-size: 30px;
+  opacity: 0.3;
+  font-style: normal;
+  color: #0f9900;
+}
+
+figure.snip1139 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+
+figure.snip1139 blockquote:after {
+  content: "”";
+  right: 20px;
+  bottom: 23px;
+}
+
+figure.snip1139 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+
+figure.snip1139 .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+figure.snip1139 .author h5 {
+  text-align: center;
+  font-weight: 800;
+  color: #542e27;
+}
+@keyframes check {
+  50% {
+    outline-color: #0f9900;
+    box-shadow: 0 0 0 12px #0f9900, 0 0 0 36px #dbf0d9;
+  }
+  100% {
+    outline-color: #0f9900;
+    box-shadow: 0 0 0 0 #0f9900, 0 0 0 0 #dbf0d9;
+  }
+}
 /* ПОДГОТОВКА К ВЫВОЗУ начало */
 .section_export {
-  background-color: #DBF0D9;
+  background-color: #dbf0d9;
 }
 .section_export .title {
   text-align: center;
@@ -833,7 +1085,7 @@ header a:hover {
 }
 .section_export .export_link {
   font-family: "Montserrat";
-  color: #0F9900;
+  color: #0f9900;
   text-align: center;
   font-size: 23px;
   line-height: 35px;
