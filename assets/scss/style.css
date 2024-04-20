@@ -28,6 +28,8 @@ html {
 .section_price h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: 40px;
+  font-weight: 400;
   text-align: center;
 }
 .section_price .prices {
@@ -168,7 +170,7 @@ html {
 .footer {
   margin-top: 3%;
   padding: 3%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-content: center;
