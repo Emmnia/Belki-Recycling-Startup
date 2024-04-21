@@ -2,7 +2,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @font-face {
   font-family: "Montserrat";
-  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+  src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 * {
   padding: 0;
