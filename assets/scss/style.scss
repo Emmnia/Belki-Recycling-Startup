@@ -118,7 +118,7 @@ html {
   }
 
   .full-list {
-    color: $accent-color2
+    color: $accent-color2;
   }
 }
 
@@ -131,7 +131,7 @@ html {
   background-color: $bg-color;
 
   p {
-      margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 
   .values__text {
@@ -152,18 +152,16 @@ html {
   }
 
   .btn {
-  @include button();
-  max-width: 80%;
-  text-decoration: none;
+    @include button();
+    max-width: 80%;
+    text-decoration: none;
   }
 
   .values__text-button {
     margin-top: 3rem;
     text-align: center;
   }
-
 }
-
 
 /* ПОДАРКИ начало */
 .section_gifts {
@@ -735,6 +733,10 @@ header {
     padding-top: 30px;
     padding-bottom: 3rem;
   }
+
+  // @media screen and (max-width: 425px) {
+  //   padding: 2rem 15rem 5rem 15rem;
+  // }
 }
 
 .us_container {
@@ -784,7 +786,8 @@ header {
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 .section_testimonials {
-  height: 100vh;
+  // height: 100vh;
+  height: 900px;
   padding-bottom: 10rem;
 
   h1 {
@@ -799,7 +802,8 @@ header {
 }
 
 .slider {
-  height: 100%;
+  // height: 100%;
+  height: 800px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
