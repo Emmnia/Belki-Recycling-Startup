@@ -720,7 +720,7 @@ header {
 
 /* О НАС */
 .section_us {
-  padding: 5rem 15rem 5rem 15rem;
+  padding: 2rem 10rem 5rem 10rem;
   background-color: $bg-color;
 
   h1 {
@@ -748,9 +748,12 @@ header {
   .us_container__img {
     grid-area: us_container__img;
     img {
-      width: 100%;
+      // width: 100%;
+      width: 350px;
+      height: 450px;
       border-radius: 50%;
       box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
+      display: block;
     }
   }
 
