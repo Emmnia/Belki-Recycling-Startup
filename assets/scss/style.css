@@ -704,7 +704,7 @@ header a:hover {
 /* ДЛЯ КОГО? конец */
 /* О НАС */
 .section_us {
-  padding: 5rem 15rem 5rem 15rem;
+  padding: 2rem 10rem 5rem 10rem;
   background-color: #dbf0d9;
 }
 .section_us h1 {
@@ -728,9 +728,11 @@ header a:hover {
   grid-area: us_container__img;
 }
 .us_container .us_container__img img {
-  width: 100%;
+  width: 350px;
+  height: 450px;
   border-radius: 50%;
   box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
+  display: block;
 }
 .us_container .us_container__content {
   grid-area: us_container__content;
