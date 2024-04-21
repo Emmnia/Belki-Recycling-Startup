@@ -144,7 +144,7 @@ html {
     border-radius: 30px;
 
     &::before {
-      content: url(/assets/images/leaf-logo.png);
+      content: url(./assets/images/leaf-logo.png);
       position: absolute;
       top: -3rem;
       left: 50%;
@@ -213,7 +213,7 @@ html {
   left: -20px;
   width: 35px;
   height: 31px;
-  background-image: url(/assets/images/circle.png);
+  background-image: url(./assets/images/circle.png);
   z-index: -1;
 }
 
