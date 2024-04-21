@@ -75,11 +75,12 @@ html {
 /* ПРАЙС конец */
 .main {
   margin: 2%;
-  font-family: "Montserrat", sans-serif;
+  font-family: $fontmain;
   line-height: 1.5;
   text-align: left;
   padding: 0px 100px;
   font-weight: 400;
+
 
 }
 
@@ -97,12 +98,15 @@ html {
   align-self: center;
   text-decoration: none;
   line-height: 10em;
+  
 }
 
 a {
   color: #0f9900;
   text-decoration: underline;
 }
+
+
 
 .main_text1{
   line-height: 5em;
@@ -120,7 +124,7 @@ a {
 }
 
 .main_text__text4{
-  line-height: 5em;
+  line-height: 3em;
 
 }
 
