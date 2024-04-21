@@ -7,13 +7,13 @@
     <script src="https://kit.fontawesome.com/3b773055fe.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/images/logo-transp.png" type="image/png">
     <link rel="stylesheet" href="assets/styles/normalize.css">
-    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
   <body>
     <header>
         <nav>
           <ul>
-            <li><a href="#">Что принимаем</a></li>
+            <li><a href="#acceptlist">Что принимаем</a></li>
             <li><a href="#benefit">Преимущества</a></li>
             <li><a href="#price">Цены</a></li>
             <li><a href="#footer">Контакты</a></li>
@@ -37,27 +37,31 @@
           </h2>
         </div>
         <div class="first-block__button">
-          <button type="button" class="button_leave-application">
+          <a href="https://forms.yandex.ru/cloud/662252f784227c144746c933/" target="_blank" rel="noopener noreferrer"><button type="button" class="button_leave-application">
             оставить заявку
-          </button>
+          </button></a>
         </div>
       </div>
 
       <!-- ПЕРВЫЙ БЛОК конец-->
     </header>
-    <main class="main">
-      <div class="main_text">
-        <p class="main_text__text1">Привет!</p>
-        <p class="main_text__text2">Это экотакси «Мобильные белки»</p>
-        <p>Мы помогаем расхламляться, жителям Калининграда и Гурьевска!</p>
-        <p class="main_text__text3">
-          Нам можно сдать ненужные вещи:одежду, обувь, посуду,
-        </p>
-        <p class="main_text__text4">
-          мелкую бытовую технику, игрушки и многое другое.
-        </p>
-        <a class="spicok">Полный список принимаемого</a>
+    <main>
+      <div class="main_text" id="acceptlist">
+        <p>Привет!</p>
+        <p>Это экотакси «Мобильные белки»! Принимаем заявки на расхламление от жителей Калининграда, Гурьевска и Зеленоградска. </p>
+        <p>Нам можно сдать ненужные вещи: одежду, обувь, посуду, мелкую бытовую технику, игрушки и многое другое.</p>
+        <p><i class="fa-solid fa-list-check"></i><a href="https://goo.su/6GC9Un9" target="_blank" rel="noopener noreferrer" class="full-list">Полный список принимаемого</a></p>
       </div>
+      <div class="values">
+        <div class="values__text">
+          <p>Наши главные ценности — экологичность и бережное потребление, поэтому всем вещам мы стремимся подарить новую жизнь. В зависимости от состояния передаём в благотворительные организации, мастерам на творческое переосмысление или на переработку в качестве вторсырья.</p>
+          <p>Вы можете быть уверены, что вещи в пригодном состоянии не отправятся на свалку.</p>   
+          <div class="values__text-button">
+            <a href="https://forms.yandex.ru/cloud/662252f784227c144746c933/" target="_blank" rel="noopener noreferrer" class="btn">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+      
         <!-- РАСХЛАМЛЕНИЕ начало -->
 
     <section class="section_benefit" id="benefit">
@@ -66,7 +70,7 @@
               <img class="img-girl" src="./assets/images/plantdoodle.png" alt="">
           </div>
           <div class="block_title">
-              <h2 class="title">Расхламление вместе с «Мобильными белками» это:</h2>
+              <h2 class="title">Расхламление вместе с «Мобильными белками» — это:</h2>
           </div>
       </div>
 

@@ -100,6 +100,71 @@ html {
 }
 /* ПРАЙС конец */
 
+.main_text {
+  margin: 2rem 5rem;
+  max-width: 80%;
+  font-family: $fontmain;
+  font-size: 20px;
+  font-weight: 400;
+  color: $primary-color;
+
+  p {
+    margin-bottom: 2rem;
+
+    i {
+      margin-right: 5px;
+      color: $accent-color2;
+    }
+  }
+
+  .full-list {
+    color: $accent-color2
+  }
+}
+
+.values {
+  padding: 2rem 5rem;
+  font-family: $fontmain;
+  font-size: 20px;
+  font-weight: 400;
+  color: $primary-color;
+  background-color: $bg-color;
+
+  p {
+      margin-bottom: 2rem;
+  }
+
+  .values__text {
+    position: relative;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 90vw;
+    background-color: #fcfcfb;
+    box-shadow: 0 8px 6px 0 rgba(84, 46, 39, 0.7);
+    border-radius: 30px;
+
+    &::before {
+      content: url(/assets/images/leaf-logo.png);
+      position: absolute;
+      top: -3rem;
+      left: 50%;
+    }
+  }
+
+  .btn {
+  @include button();
+  max-width: 80%;
+  text-decoration: none;
+  }
+
+  .values__text-button {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+}
+
+
 /* ПОДАРКИ начало */
 .section_gifts {
   margin: 5%;
@@ -116,6 +181,7 @@ html {
   button {
     @include button();
     max-width: 80%;
+    font-size: 20px;
     align-self: center;
   }
 
@@ -320,7 +386,7 @@ header {
       font-weight: 400;
       font-size: 2.5rem;
       line-height: 129%;
-      color: rgba(84, 46, 39, 0.8);
+      color: $primary-color;
       text-align: left;
       margin-left: 13.5%;
     }
