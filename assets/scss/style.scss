@@ -734,9 +734,9 @@ header {
     padding-bottom: 3rem;
   }
 
-  // @media screen and (max-width: 425px) {
-  //   padding: 2rem 15rem 5rem 15rem;
-  // }
+  @media screen and (max-width: 430px) {
+    padding: 0;
+  }
 }
 
 .us_container {
@@ -754,6 +754,9 @@ header {
       border-radius: 50%;
       box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
       display: block;
+      @media screen and (max-width: 430px) {
+        width: 100%;
+      }
     }
   }
 
@@ -763,6 +766,14 @@ header {
     font-family: "Montserrat";
     color: #542e27;
     font-size: 1.2em;
+    @media screen and (max-width: 430px) {
+      padding: 2rem 0rem;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
 }
 
@@ -772,6 +783,9 @@ header {
 
 .awards {
   padding: 2rem;
+  @media screen and (max-width: 430px) {
+    padding: 1rem 0;
+  }
 }
 
 .award {
@@ -802,11 +816,16 @@ header {
     line-height: 50px;
     padding-top: 30px;
   }
+  @media screen and (max-width: 430px) {
+    height: 4200px;
+    // height: 430vh;
+    margin-bottom: 3rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .slider {
-  // height: 100%;
-  height: 800px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -824,7 +843,14 @@ header {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  @media screen and (max-width: 430px) {
+    input {
+      display: none;
+    }
+  }
 }
+
 .slider__nav {
   width: 12px;
   height: 12px;
@@ -876,6 +902,11 @@ header {
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  @media screen and (max-width: 430px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 }
 .slider__contents {
   font-family: "Montserrat";
@@ -902,6 +933,9 @@ header {
   justify-content: center;
   padding-bottom: 5rem;
   max-height: 100%;
+  @media screen and (max-width: 430px) {
+    display: flex;
+  }
 }
 
 // .small-slide {
