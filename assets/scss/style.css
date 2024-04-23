@@ -137,10 +137,18 @@ html {
   color: white;
   border: none;
   border-radius: 65px;
-  background: linear-gradient(90deg, rgb(51, 204, 51), rgb(15, 153, 0) 100%);
+  background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
   max-width: 80%;
   text-decoration: none;
+}
+.values .btn:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .values .btn:active {
   box-shadow: rgba(15, 153, 0, 0.3) 3px 3px 3px 3px;
@@ -172,11 +180,19 @@ html {
   color: white;
   border: none;
   border-radius: 65px;
-  background: linear-gradient(90deg, rgb(51, 204, 51), rgb(15, 153, 0) 100%);
+  background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
   max-width: 80%;
   font-size: 20px;
   align-self: center;
+}
+.section_gifts button:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .section_gifts button:active {
   box-shadow: rgba(15, 153, 0, 0.3) 3px 3px 3px 3px;
@@ -384,18 +400,24 @@ header a:hover {
   color: white;
   border: none;
   border-radius: 65px;
-  background: linear-gradient(90deg, rgb(51, 204, 51), rgb(15, 153, 0) 100%);
+  background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
   margin-left: 50%;
   text-transform: uppercase;
+  font-size: 20px;
   height: 12vh;
   width: 17vw;
 }
+.button_leave-application:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 .button_leave-application:active {
   box-shadow: rgba(15, 153, 0, 0.3) 3px 3px 3px 3px;
-}
-.button_leave-application:hover {
-  text-decoration: underline;
 }
 
 /* ПЕРВЫЙ БЛОК конец */
