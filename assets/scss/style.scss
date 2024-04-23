@@ -302,6 +302,10 @@ html {
   i {
     margin-right: 10px;
     font-size: 40px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   div {
