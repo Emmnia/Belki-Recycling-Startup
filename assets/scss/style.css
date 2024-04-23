@@ -103,6 +103,11 @@ html {
 .values p {
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .values {
+    padding: 3.5rem 0;
+  }
+}
 .values .values__text {
   position: relative;
   margin: 2rem auto;
@@ -117,6 +122,12 @@ html {
   position: absolute;
   top: -3rem;
   left: 50%;
+}
+@media screen and (max-width: 768px) {
+  .values .values__text {
+    margin: auto;
+    max-width: 80%;
+  }
 }
 .values .btn {
   margin-bottom: 1rem;
