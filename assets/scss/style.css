@@ -81,6 +81,12 @@ html {
   font-weight: 400;
   color: #542e27;
 }
+@media screen and (max-width: 768px) {
+  .main_text {
+    margin: 2rem auto;
+    max-width: 80%;
+  }
+}
 .main_text p {
   margin-bottom: 2rem;
 }
@@ -121,7 +127,7 @@ html {
   content: url(../images/leaf-logo.png);
   position: absolute;
   top: -3rem;
-  left: 50%;
+  left: 46%;
 }
 @media screen and (max-width: 768px) {
   .values .values__text {
@@ -142,7 +148,6 @@ html {
   moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  max-width: 80%;
   text-decoration: none;
 }
 .values .btn:hover {
@@ -172,30 +177,12 @@ html {
     margin: 10% 5% 10% 5%;
   }
 }
-.section_gifts button {
-  margin-bottom: 1rem;
-  padding: 0.7rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: white;
-  border: none;
-  border-radius: 65px;
-  background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
-  background-size: 300% 100%;
-  moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-  max-width: 80%;
-  font-size: 20px;
-  align-self: center;
-}
-.section_gifts button:hover {
-  background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.section_gifts button:active {
-  box-shadow: rgba(15, 153, 0, 0.3) 3px 3px 3px 3px;
+.section_gifts .title_gifts {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
 }
 .section_gifts i {
   margin-right: 5px;
