@@ -411,32 +411,50 @@ header {
 
 /* РАСХЛАМЛЕНИЕ начало */
 
-.section_benefit {
-  background-color: $bg-color;
+%text {
+  font-family: $fontmain;
+  font-weight: 400;
+  text-align: center;
+  color: $primary-color;
+}
+
+%box{
+  background-color: #fcfcfb;
+  box-shadow: 0px 8px 6px 0 rgba(84, 46, 39, 0.7);
+  border-radius: 40px;
+}
+
+@mixin dir ($top, $left){
+  top:$top;
+  left:$left;
+  position: absolute;
+  z-index: -1;
+}
+
+.title {
+  @extend %text;
+  font-size: 40px;
+  padding-top: 8%;
+  padding-bottom: 3%;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 25px;
+  }
 
   @media screen and (max-width: 425px) {
-    margin: 0 auto;
+    font-size: 20px;
   }
+}
+.section_benefit {
 
-  .title {
-    font-family: "Montserrat";
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
-    color: $primary-color;
-    padding-top: 8%;
-
-    @media screen and (max-width: 425px) {
-      font-size: 20px;
-      text-align: center;
-    }
-  }
+  background-color: $bg-color;
+  width: 100vw;
 
   .section__title_benefit {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 80%;
+    max-width: 80%;
 
     .block_img-girl {
       flex-basis: 40%;
@@ -447,14 +465,11 @@ header {
     }
 
     .block_title {
-      flex-basis: 50%;
+      flex-basis: 55%;
     }
 
-    @media screen and (max-width: 1024px) {
-      width: 100%;
-    }
     @media screen and (max-width: 425px) {
-      width: 100%;
+      max-width: 100%;
     }
   }
   .container_benefit {
@@ -467,91 +482,114 @@ header {
       align-items: center;
 
       .block_details {
+        @extend %box;
         width: 450px;
-        background-color: #fcfcfb;
-        box-shadow: 0 8px 6px 0 rgba(84, 46, 39, 0.7);
-        border-radius: 30px;
-        margin: 10px;
-        padding: 20px;
+        margin: 0.6rem;
+        padding: 1.25rem;
 
         .block__summary_details {
-          font-family: "Montserrat";
-          font-size: 30px;
-          font-weight: 400;
-          color: $primary-color;
-          text-align: center;
-          padding-bottom: 10px;
+          @extend %text;
+          font-size: 20px;
+          padding-bottom: 0.6rem;
+          cursor: pointer;
 
-          @media screen and (max-width: 425px) {
-            font-size: 18px;
+          @media screen and (max-width: 1024px) {
+            font-size: $fontsize;
           }
         }
 
         .block__text_details {
-          font-family: "Montserrat";
-          font-size: 24px;
-          font-weight: 400;
-          color: $primary-color;
-          text-align: center;
+          @extend %text;
+          font-size: $fontsize;
 
-          @media screen and (max-width: 425px) {
-            font-size: 15px;
+          @media screen and (max-width: 1024px) {
+            font-size: 16px;
           }
         }
 
         @media screen and (max-width: 1024px) {
-          width: 300px;
+          width: 19rem;
         }
         @media screen and (max-width: 425px) {
-          font-size: 15px;
           padding: 5%;
           border-radius: 20px;
-          width: 280px;
+          width: 17rem;
         }
       }
       .block_pad {
-        padding: 30px;
-        margin-top: 27px;
+        padding-bottom: 2.8rem;
+
+        @media screen and (max-width: 425px) {
+          padding-bottom: 1.6rem;
+        }
       }
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 700px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 0.6rem;
     }
   }
 }
 
+/* РАСХЛАМЛЕНИЕ конец */
+
 /* ДЛЯ КОГО? начало */
 
-.section_service {
-  background-color: #dbf0d9;
+.img-ball{
+  @media screen and (max-width: 1024px) {
+      width: 200px;
+  }
+  @media screen and (max-width: 425px) {
+      width: 110px;
+  }
+}
 
-  .title {
-    font-family: "Montserrat";
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
-    color: $primary-color;
-    padding-top: 8%;
-    line-height: 40px;
+  .service {
+    z-index: 1;
 
-    @media screen and (max-width: 425px) {
+    .service__text {
+      @extend %text;
+      @extend %box;
+      display: flex;
+      align-items: center;
       font-size: 20px;
-      line-height: 40px;
+      line-height: 30px;
+      padding: 2rem;
+      width: 350px;
+      height: 200px;
+
+      @media screen and (max-width: 1024px) {
+        width: 270px;
+        padding: 0.5rem;
+        margin-top: 0.6rem;
+        font-size: $fontsize;
+        line-height: 20px;
+        text-align: center;
+      }
+  
+      @media screen and (max-width: 425px) {
+        margin: 0.6rem;
+        height: 110px;
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
+  .section_service {
 
+    background-color: $bg-color;
+    width: 100vw;
+  }
   .block_service {
     display: flex;
     flex-direction: column;
-    margin: 0 13%;
-    padding: 10px;
+    margin: 0 10%;
+    padding: 0.6rem;
 
     @media screen and (max-width: 1024px) {
-      margin-top: 20px;
       justify-content: space-between;
     }
 
@@ -560,31 +598,35 @@ header {
       justify-content: space-between;
       align-items: center;
 
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 700px) {
         flex-direction: column;
-        width: 80%;
+        max-width: 80%;
         margin: 0 auto;
       }
-
       .service-block_first {
-        margin-left: -40px;
+        margin-left: -2.4rem;
         position: relative;
 
         @media screen and (max-width: 1024px) {
           margin-left: 0;
         }
+        .service__ball_first{
+          @include dir (-50px, -40px);
 
-        .service__ball_first {
-          position: absolute;
-          bottom: 20px;
-          left: -40px;
-          z-index: -1;
+          @media screen and (max-width: 1024px) {
+            top: -30px;
+      
+          }
+          @media screen and (max-width: 425px) {
+            top: -10px;
+            left: -5px;
+      
+          }
         }
       }
 
       .service-block_second {
-        padding: 40px;
-        margin-bottom: -120px;
+        margin-bottom: 5rem;
         position: relative;
 
         @media screen and (max-width: 1024px) {
@@ -592,89 +634,36 @@ header {
         }
 
         .service__ball_second {
-          position: absolute;
-          top: 20px;
-          left: 160px;
-          z-index: -1;
+          @include dir (20px, 140px);
 
           @media screen and (max-width: 1024px) {
-            left: 70px;
+            
+            top: -10px;
+            left: 110px;
           }
           @media screen and (max-width: 425px) {
             left: 180px;
           }
         }
       }
-      .service {
-        display: flex;
-        align-items: center;
-        background-color: #fcfcfb;
-        box-shadow: 4px 8px 6px 0 rgba(84, 46, 39, 0.7);
-        border-radius: 40px;
-        padding: 50px;
-        width: 360px;
-        height: 230px;
-        z-index: 2;
-
-        @media screen and (max-width: 1024px) {
-          width: 270px;
-          padding: 7px;
-          margin-top: 10px;
-        }
-
-        @media screen and (max-width: 425px) {
-          margin: 10px;
-          height: 115px;
-        }
-
-        .service__text {
-          font-family: "Montserrat";
-          font-size: 23px;
-          font-weight: 400;
-          line-height: 45px;
-          color: #542e27;
-
-          @media screen and (max-width: 1024px) {
-            font-size: 20px;
-            line-height: 30px;
-            text-align: center;
-          }
-          @media screen and (max-width: 425px) {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 20px;
-          }
-        }
-        @media screen and (max-width: 1024px) {
-          .img-ball {
-            width: 250px;
-          }
-        }
-        @media screen and (max-width: 425px) {
-          .img-ball {
-            width: 110px;
-          }
-        }
-      }
 
       .service-block_third {
-        padding: 40px;
-        margin-top: -120px;
+        margin-bottom: 5rem;
         position: relative;
 
         @media screen and (max-width: 1024px) {
-          margin-top: 0;
+          margin-bottom: 0;
         }
 
         .service__ball_third {
-          position: absolute;
-          bottom: 20px;
-          left: 140px;
-          z-index: -1;
+          @include dir (-50px, 150px);
 
           @media screen and (max-width: 1024px) {
-            top: 40px;
-            left: -45px;
+            top: 60px;
+            left: -40px;
+          }
+          @media screen and (max-width: 425px) {
+            left: -10px;
           }
         }
       }
@@ -683,30 +672,27 @@ header {
         position: relative;
 
         .service__ball_fourth {
-          position: absolute;
-          top: 30px;
-          left: -60px;
-          z-index: -1;
+          @include dir (30px, -60px);
 
           @media screen and (max-width: 1024px) {
             top: 50px;
-            left: 60px;
+            left: 100px;
           }
           @media screen and (max-width: 425px) {
-            top: 20px;
-            left: 160px;
+            top: 60px;
+            left: 180px;
           }
         }
       }
     }
     .service_img {
       align-self: center;
-      width: 400px;
+      width: 350px;
 
       @media screen and (max-width: 1024px) {
-        width: 315px;
+        width: 300px;
         order: 2;
-        // z-index: -1;
+        margin-top: 10px;
       }
 
       .service__meditation_img {
@@ -714,7 +700,6 @@ header {
       }
     }
   }
-}
 
 /* ДЛЯ КОГО? конец */
 
@@ -1040,20 +1025,47 @@ figure.snip1139 .author h5 {
 /* ПОДГОТОВКА К ВЫВОЗУ начало */
 
 .section_export {
-  background-color: #dbf0d9;
 
-  .title {
-    text-align: center;
-    font-family: "Montserrat";
-    color: #542e27;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 50px;
-    padding-top: 30px;
+  background-color: $bg-color;
+  width: 100vw;
+}
 
-    @media screen and (max-width: 425px) {
-      font-size: 20px;
-    }
+.title_number{
+  @extend %text;
+  font-size: 30px;
+  padding: 4% 0;
+
+  @media screen and (max-width: 1024px){
+   font-size: 20px;
+  }
+
+  @media screen and (max-width: 425px) {
+   font-size: $fontsize;
+  }
+
+}
+.text {
+
+  @extend %text;
+   font-size: 20px;
+   line-height: 30px;
+
+   @media screen and (max-width: 425px) {
+     font-size: 16px;
+   }
+ }
+
+ .export_link {
+   font-family: $fontmain;
+   color: $accent-color2;
+   text-align: center;
+   font-size: 20px;
+   line-height: 30px;
+   font-weight: 500;
+
+   @media screen and (max-width: 425px) {
+     font-size: 18px;
+   }
   }
 
   .export {
@@ -1067,86 +1079,85 @@ figure.snip1139 .author h5 {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      margin: 0 5%;
     }
   }
 
   .block_export {
+
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    .block__item_export {
-      background-color: #fcfcfb;
-      border-radius: 40px;
-      padding: 23px;
-      width: 300px;
-      height: 230px;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 10px;
-      box-shadow: 4px 8px 6px 0 rgba(84, 46, 39, 0.7);
+  .block__item_export {
 
-      @media screen and (max-width: 425px) {
-        height: auto;
-        line-height: 30px;
-        font-weight: 600;
-      }
+    @extend %box;
+    padding: 3%;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 
-      .box_export {
-        text-align: center;
-
-        .star {
-          margin-bottom: 7px;
-        }
-
-        @media screen and (max-width: 425px) {
-          font-size: 15px;
-        }
-      }
+    @media screen and (max-width: 425px) {
+      height: auto;
     }
-    .block_arrow {
-      position: relative;
 
-      .arrow {
-        position: absolute;
-        top: 220px;
-        right: 140px;
+    .box_export {
+      text-align: center;
 
-        @media screen and (min-width: 1025px) and (max-width: 1290px) {
-          display: none;
+      .star {
+        margin-bottom: 7px;
+
+        @media screen and (max-width: 1328px) {
+          width: 16px;
         }
-
-        @media screen and (max-width: 1024px) {
-          top: 140px;
-          right: 20px;
-        }
-
-        @media screen and (max-width: 768px) {
-          top: 140px;
-          right: 100px;
-        }
-
-        @media screen and (max-width: 425px) {
-          display: none;
-        }
+      }
+  
+      @media screen and (max-width: 425px) {
+        font-size: 15px;
       }
     }
   }
+  .block_arrow {
+    position: relative;
 
+    .arrow {
+      position: absolute;
+      top: 270px;
+      right: 140px;
+
+      @media screen and (max-width: 1328px) {
+        top: 130px;
+        right: 5px;
+    
+      }
+
+      @media screen and (max-width: 768px) {
+        top: 140px;
+        right: 90px;
+      }
+
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
   .export-block_second {
     display: flex;
     margin-top: 100px;
     align-self: flex-start;
     justify-content: space-evenly;
-    /* margin-left: 120px; */
-    width: 63vw;
+    width: 60vw;
 
     .block__list_export {
+
       font-size: 20px;
       text-align: start;
       margin: 5px;
-      width: 350px;
+      width: 310px;
       display: flex;
       align-items: center;
       position: relative;
@@ -1155,94 +1166,48 @@ figure.snip1139 .author h5 {
         align-self: flex-start;
         margin-top: 20px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1328px){
           margin-top: -7px;
+          width: 15px;
         }
-        @media screen and (max-width: 425px) {
-          font-size: 15px;
-        }
+
       }
       .text_lite {
-        font-family: "Montserrat";
-        color: #542e27;
+        font-family: $fontmain;
+        color: $primary-color;
         font-size: 20px;
         line-height: 25px;
         text-align: start;
+        z-index: 1;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 700px) {
           font-size: 16px;
+          margin-top: 3px;
         }
       }
       .ellipse1 {
         position: absolute;
       }
-      @media screen and (max-width: 425px) {
+      .img-ellipse {
         width: 300px;
+        height: 250px;
+        @media screen and (max-width: 700px) {
+          height: 150px;
       }
-      @media screen and (max-width: 425px) {
-        .img-ellipse {
-          width: 300px;
-        }
       }
+
     }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1328px) {
       flex-direction: row-reverse;
       align-items: center;
       justify-content: center;
       width: 98%;
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 700px) {
       flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
-      margin-top: 5px;
+      margin: 10px auto;
     }
   }
-
-  .block__item_nut {
-    height: 265px;
-
-    background-color: #fcfcfb;
-    border-radius: 40px;
-    padding: 23px;
-    width: 300px;
-    height: 230px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    box-shadow: 4px 8px 6px 0 rgba(84, 46, 39, 0.7);
-
-    @media screen and (max-width: 1024px) {
-      margin: 45px;
-      height: auto;
-    }
-  }
-
-  .text {
-    font-family: "Montserrat";
-    color: #542e27;
-    text-align: center;
-    font-size: 23px;
-    line-height: 35px;
-    font-weight: 500;
-
-    @media screen and (max-width: 425px) {
-      font-size: 16px;
-    }
-  }
-
-  .export_link {
-    font-family: "Montserrat";
-    color: #0f9900;
-    text-align: center;
-    font-size: 23px;
-    line-height: 35px;
-    font-weight: 500;
-
-    @media screen and (max-width: 425px) {
-      font-size: 18px;
-    }
-  }
-}
 /* ПОДГОТОВКА К ВЫВОЗУ конец */
