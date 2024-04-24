@@ -152,7 +152,6 @@ html {
 }
 .values .btn:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .values .btn:active {
@@ -403,7 +402,6 @@ header a:hover {
 }
 .button_leave-application:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .button_leave-application:active {
