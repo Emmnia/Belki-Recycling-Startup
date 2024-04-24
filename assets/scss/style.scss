@@ -24,7 +24,7 @@ $fontsize: 18px;
 
   &:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -589,6 +589,7 @@ header {
       padding: 2rem;
       width: 350px;
       height: 200px;
+      z-index: 2;
 
       @media screen and (max-width: 1024px) {
         width: 270px;
@@ -600,7 +601,7 @@ header {
       }
   
       @media screen and (max-width: 425px) {
-        margin: 0.6rem;
+        margin: 0.5rem;
         height: 110px;
         font-size: 16px;
         line-height: 20px;
@@ -666,12 +667,12 @@ header {
           @include dir (20px, 140px);
 
           @media screen and (max-width: 1024px) {
-            
-            top: -10px;
+            top: 40px;
             left: 110px;
           }
+
           @media screen and (max-width: 425px) {
-            left: 180px;
+            left: 190px;
           }
         }
       }
@@ -704,11 +705,11 @@ header {
           @include dir (30px, -60px);
 
           @media screen and (max-width: 1024px) {
-            top: 50px;
-            left: 100px;
+            top: 60px;
+            left: 90px;
           }
           @media screen and (max-width: 425px) {
-            top: 60px;
+            top: 50px;
             left: 180px;
           }
         }
@@ -719,9 +720,9 @@ header {
       width: 350px;
 
       @media screen and (max-width: 1024px) {
-        width: 300px;
+        width: 280px;
         order: 2;
-        margin-top: 10px;
+        margin-top: 20px;
       }
 
       .service__meditation_img {
@@ -1174,7 +1175,8 @@ figure.snip1139 .author h5 {
       .star {
         margin-bottom: 7px;
 
-        @media screen and (max-width: 1328px) {
+        @media screen and (max-width: 1333px) {
+  
           width: 16px;
         }
       }
@@ -1189,48 +1191,57 @@ figure.snip1139 .author h5 {
 
     .arrow {
       position: absolute;
-      top: 270px;
-      right: 140px;
+      top: 272px;
+      right: 43%;
 
-      @media screen and (max-width: 1328px) {
-        top: 130px;
-        right: 5px;
-    
+      .arrow-img {
+        display: block;
+
+        @media screen and (max-width: 1333px){
+          display: none;
+        }
       }
 
-      @media screen and (max-width: 768px) {
-        top: 140px;
-        right: 90px;
-      }
-
-      @media screen and (max-width: 700px) {
+      .arrow-img2 {
         display: none;
+
+        @media screen and (max-width: 1333px){
+          display: block;
+          transform: rotate(-15deg);
+        }
+        @media screen and (max-width: 768px){
+          top: 140px;
+        }
+        @media screen and (max-width: 700px){
+          display: none;
+        }
       }
     }
   }
+
   .export-block_second {
     display: flex;
-    margin-top: 100px;
+    margin-top: 110px;
     align-self: flex-start;
     justify-content: space-evenly;
     width: 60vw;
 
-    .block__list_export {
+   .block__list_export {
 
-      font-size: 20px;
-      text-align: start;
-      margin: 5px;
-      width: 310px;
-      display: flex;
-      align-items: center;
-      position: relative;
+       font-size: 20px;
+       text-align: start;
+       margin: 5px;
+       width: 310px;
+       display: flex;
+       align-items: center;
+       position: relative;
 
       .star2 {
         align-self: flex-start;
         margin-top: 20px;
 
-        @media screen and (max-width: 1328px){
-          margin-top: -7px;
+        @media screen and (max-width: 1333px){
+          margin-top: -2px;
           width: 15px;
         }
 
@@ -1260,7 +1271,7 @@ figure.snip1139 .author h5 {
       }
 
     }
-    @media screen and (max-width: 1328px) {
+    @media screen and (max-width: 1333px) {
       flex-direction: row-reverse;
       align-items: center;
       justify-content: center;
