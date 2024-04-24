@@ -16,18 +16,18 @@ $fontsize: 18px;
   border-radius: 65px;
   background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
   background-size: 300% 100%;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
 
   &:hover {
     background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    // moz-transition: all .4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   &:active {
@@ -122,9 +122,9 @@ html {
   color: $primary-color;
 
   @media screen and (max-width: 768px) {
-      margin: 2rem auto;
-      max-width: 80%;
-    }
+    margin: 2rem auto;
+    max-width: 80%;
+  }
 
   p {
     margin-bottom: 2rem;
@@ -152,9 +152,9 @@ html {
     margin-bottom: 2rem;
   }
 
-    @media screen and (max-width: 768px) {
-      padding: 3.5rem 0;
-    }
+  @media screen and (max-width: 768px) {
+    padding: 3.5rem 0;
+  }
 
   .values__text {
     position: relative;
@@ -447,15 +447,15 @@ header {
   color: $primary-color;
 }
 
-%box{
+%box {
   background-color: #fcfcfb;
   box-shadow: 0px 8px 6px 0 rgba(84, 46, 39, 0.7);
   border-radius: 40px;
 }
 
-@mixin dir ($top, $left){
-  top:$top;
-  left:$left;
+@mixin dir($top, $left) {
+  top: $top;
+  left: $left;
   position: absolute;
   z-index: -1;
 }
@@ -475,7 +475,6 @@ header {
   }
 }
 .section_benefit {
-
   background-color: $bg-color;
   width: 100vw;
 
@@ -567,17 +566,17 @@ header {
 
 /* ДЛЯ КОГО? начало */
 
-.img-ball{
+.img-ball {
   @media screen and (max-width: 1024px) {
-      width: 200px;
+    width: 200px;
   }
   @media screen and (max-width: 425px) {
-      width: 110px;
+    width: 110px;
   }
 }
 
-  .service {
-    z-index: 1;
+.service {
+  z-index: 1;
 
     .service__text {
       @extend %text;
@@ -608,128 +607,125 @@ header {
       }
     }
   }
-  .section_service {
 
-    background-color: $bg-color;
-    width: 100vw;
+.section_service {
+  background-color: $bg-color;
+  width: 100vw;
+}
+.block_service {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  padding: 0.6rem;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: space-between;
   }
-  .block_service {
+
+  .block__position_service {
     display: flex;
-    flex-direction: column;
-    margin: 0 10%;
-    padding: 0.6rem;
+    justify-content: space-between;
+    align-items: center;
 
-    @media screen and (max-width: 1024px) {
-      justify-content: space-between;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      max-width: 80%;
+      margin: 0 auto;
     }
-
-    .block__position_service {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      @media screen and (max-width: 700px) {
-        flex-direction: column;
-        max-width: 80%;
-        margin: 0 auto;
-      }
-      .service-block_first {
-        margin-left: -2.4rem;
-        position: relative;
-
-        @media screen and (max-width: 1024px) {
-          margin-left: 0;
-        }
-        .service__ball_first{
-          @include dir (-50px, -40px);
-
-          @media screen and (max-width: 1024px) {
-            top: -30px;
-      
-          }
-          @media screen and (max-width: 425px) {
-            top: -10px;
-            left: -5px;
-      
-          }
-        }
-      }
-
-      .service-block_second {
-        margin-bottom: 5rem;
-        position: relative;
-
-        @media screen and (max-width: 1024px) {
-          margin-bottom: 0;
-        }
-
-        .service__ball_second {
-          @include dir (20px, 140px);
-
-          @media screen and (max-width: 1024px) {
-            top: 40px;
-            left: 110px;
-          }
-
-          @media screen and (max-width: 425px) {
-            left: 190px;
-          }
-        }
-      }
-
-      .service-block_third {
-        margin-bottom: 5rem;
-        position: relative;
-
-        @media screen and (max-width: 1024px) {
-          margin-bottom: 0;
-        }
-
-        .service__ball_third {
-          @include dir (-50px, 150px);
-
-          @media screen and (max-width: 1024px) {
-            top: 60px;
-            left: -40px;
-          }
-          @media screen and (max-width: 425px) {
-            left: -10px;
-          }
-        }
-      }
-
-      .service-block_fourth {
-        position: relative;
-
-        .service__ball_fourth {
-          @include dir (30px, -60px);
-
-          @media screen and (max-width: 1024px) {
-            top: 60px;
-            left: 90px;
-          }
-          @media screen and (max-width: 425px) {
-            top: 50px;
-            left: 180px;
-          }
-        }
-      }
-    }
-    .service_img {
-      align-self: center;
-      width: 350px;
+    .service-block_first {
+      margin-left: -2.4rem;
+      position: relative;
 
       @media screen and (max-width: 1024px) {
-        width: 280px;
-        order: 2;
-        margin-top: 20px;
+        margin-left: 0;
+      }
+      .service__ball_first {
+        @include dir(-50px, -40px);
+
+        @media screen and (max-width: 1024px) {
+          top: -30px;
+        }
+        @media screen and (max-width: 425px) {
+          top: -10px;
+          left: -5px;
+        }
+      }
+    }
+
+    .service-block_second {
+      margin-bottom: 5rem;
+      position: relative;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 0;
       }
 
-      .service__meditation_img {
-        width: 100%;
+      .service__ball_second {
+        @include dir(20px, 140px);
+
+        @media screen and (max-width: 1024px) {
+          top: 40px;
+          left: 110px;
+        }
+        @media screen and (max-width: 425px) {
+          left: 190px;
+        }
+      }
+    }
+
+    .service-block_third {
+      margin-bottom: 5rem;
+      position: relative;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 0;
+      }
+
+      .service__ball_third {
+        @include dir(-50px, 150px);
+
+        @media screen and (max-width: 1024px) {
+          top: 60px;
+          left: -40px;
+        }
+        @media screen and (max-width: 425px) {
+          left: -10px;
+        }
+      }
+    }
+
+    .service-block_fourth {
+      position: relative;
+
+      .service__ball_fourth {
+        @include dir(30px, -60px);
+
+        @media screen and (max-width: 1024px) {
+          top: 60px;
+          left: 90px;
+        }
+        @media screen and (max-width: 425px) {
+          top: 50px;
+          left: 180px;
+        }
       }
     }
   }
+  .service_img {
+    align-self: center;
+    width: 350px;
+
+    @media screen and (max-width: 1024px) {
+      width: 280px;
+      order: 2;
+      margin-top: 20px;
+    }
+
+    .service__meditation_img {
+      width: 100%;
+    }
+  }
+}
 
 /* ДЛЯ КОГО? конец */
 
@@ -747,10 +743,24 @@ header {
     line-height: 50px;
     padding-top: 30px;
     padding-bottom: 3rem;
+    @media screen and (max-width: 1200px) {
+      padding-bottom: 1rem;
+      margin: 0;
+    }
+    @media screen and (max-width: 430px) {
+      padding-bottom: 3rem;
+      margin: 0;
+    }
   }
 
+  @media screen and (max-width: 1200px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 0;
+  }
   @media screen and (max-width: 430px) {
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -769,9 +779,6 @@ header {
       border-radius: 50%;
       box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
       display: block;
-      @media screen and (max-width: 430px) {
-        width: 100%;
-      }
     }
   }
 
@@ -781,11 +788,18 @@ header {
     font-family: "Montserrat";
     color: #542e27;
     font-size: 1.2em;
+
+    @media screen and (max-width: 1200px) {
+      padding: 4rem 0rem;
+    }
     @media screen and (max-width: 430px) {
-      padding: 2rem 0rem;
+      padding-top: 3rem;
+      margin: 0;
+      padding-bottom: 1rem;
+      text-align: center;
     }
   }
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -811,6 +825,9 @@ header {
     padding-bottom: 0.5rem;
     color: $accent-color2;
   }
+  p {
+    padding-bottom: 1rem;
+  }
 }
 
 /* ОТЗЫВЫ */
@@ -819,7 +836,7 @@ header {
 
 .section_testimonials {
   // height: 100vh;
-  height: 900px;
+  height: 1100px;
   padding-bottom: 10rem;
 
   h1 {
@@ -831,11 +848,12 @@ header {
     line-height: 50px;
     padding-top: 30px;
   }
+
   @media screen and (max-width: 430px) {
-    height: 4200px;
-    // height: 430vh;
-    margin-bottom: 3rem;
-    padding-right: 2.5rem;
+    // height: 4100px;
+    height: 100%;
+    // height: 600vh;
+    padding-bottom: 1rem;
   }
 }
 
@@ -874,7 +892,7 @@ header {
   z-index: 10;
   outline: 6px solid $bg-color;
   outline-offset: -6px;
-  //   box-shadow: 0 0 0 0 $accent-color2, 0 0 0 0 $bg-color;
+  // box-shadow: 0 0 0 0 $accent-color2, 0 0 0 0 $bg-color;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -888,6 +906,9 @@ header {
 }
 .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
   left: 10%;
+  // @media screen and (min-width: 470px) and (max-width: 850px) {
+  //   left: 15%;
+  // }
 }
 .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
   left: -70%;
@@ -917,6 +938,7 @@ header {
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+
   @media screen and (max-width: 430px) {
     display: flex;
     flex-direction: column;
@@ -950,6 +972,14 @@ header {
   max-height: 100%;
   @media screen and (max-width: 430px) {
     display: flex;
+    align-items: flex-end;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+  }
+  @media screen and (min-width: 470px) and (max-width: 850px) {
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }
 
@@ -987,6 +1017,9 @@ figure.snip1139 {
   text-align: left;
   box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
   border-radius: 40px;
+  // @media screen and (max-width: 430px) {
+  //   box-shadow: none;
+  // }
 }
 
 figure.snip1139 * {
@@ -1089,103 +1122,97 @@ figure.snip1139 .author h5 {
 /* ПОДГОТОВКА К ВЫВОЗУ начало */
 
 .section_export {
-
   background-color: $bg-color;
   width: 100vw;
 }
 
-.title_number{
+.title_number {
   @extend %text;
   font-size: 30px;
   padding: 4% 0;
 
-  @media screen and (max-width: 1024px){
-   font-size: 20px;
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
   }
 
   @media screen and (max-width: 425px) {
-   font-size: $fontsize;
+    font-size: $fontsize;
   }
-
 }
 .text {
-
   @extend %text;
-   font-size: 20px;
-   line-height: 30px;
+  font-size: 20px;
+  line-height: 30px;
 
-   @media screen and (max-width: 425px) {
-     font-size: 16px;
-   }
- }
-
- .export_link {
-   font-family: $fontmain;
-   color: $accent-color2;
-   text-align: center;
-   font-size: 20px;
-   line-height: 30px;
-   font-weight: 500;
-
-   @media screen and (max-width: 425px) {
-     font-size: 18px;
-   }
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
   }
+}
 
-  .export {
+.export_link {
+  font-family: $fontmain;
+  color: $accent-color2;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+
+  @media screen and (max-width: 425px) {
+    font-size: 18px;
+  }
+}
+
+.export {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5% 5% 5%;
+  align-items: center;
+
+  .export-block_first {
     display: flex;
-    flex-direction: column;
-    padding: 0 5% 5% 5%;
-    align-items: center;
-
-    .export-block_first {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin: 0 5%;
-    }
-  }
-
-  .block_export {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .block__item_export {
-
-    @extend %box;
-    padding: 3%;
-    width: 250px;
-    height: 250px;
+    flex-wrap: wrap;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+    align-items: center;
+    margin: 0 5%;
+  }
+}
 
-    @media screen and (max-width: 425px) {
-      height: auto;
+.block_export {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block__item_export {
+  @extend %box;
+  padding: 3%;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+  @media screen and (max-width: 425px) {
+    height: auto;
+  }
+
+  .box_export {
+    text-align: center;
+
+    .star {
+      margin-bottom: 7px;
+
+      @media screen and (max-width: 1333px) {
+        
+        width: 16px;
+      }
     }
-
-    .box_export {
-      text-align: center;
-
-      .star {
-        margin-bottom: 7px;
-
-        @media screen and (max-width: 1333px) {
-  
-          width: 16px;
-        }
-      }
-  
-      @media screen and (max-width: 425px) {
-        font-size: 15px;
-      }
+    @media screen and (max-width: 425px) {
+      font-size: 15px;
     }
   }
+}
   .block_arrow {
     position: relative;
 
@@ -1265,11 +1292,11 @@ figure.snip1139 .author h5 {
       .img-ellipse {
         width: 300px;
         height: 250px;
-        @media screen and (max-width: 700px) {
-          height: 150px;
-      }
-      }
 
+          @media screen and (max-width: 700px) {
+          height: 150px;
+          }
+      }
     }
     @media screen and (max-width: 1333px) {
       flex-direction: row-reverse;
@@ -1284,4 +1311,5 @@ figure.snip1139 .author h5 {
       margin: 10px auto;
     }
   }
+  
 /* ПОДГОТОВКА К ВЫВОЗУ конец */
