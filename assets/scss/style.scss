@@ -578,34 +578,36 @@ header {
 .service {
   z-index: 1;
 
-  .service__text {
-    @extend %text;
-    @extend %box;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    line-height: 30px;
-    padding: 2rem;
-    width: 350px;
-    height: 200px;
+    .service__text {
+      @extend %text;
+      @extend %box;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 2rem;
+      width: 350px;
+      height: 200px;
+      z-index: 2;
 
-    @media screen and (max-width: 1024px) {
-      width: 270px;
-      padding: 0.5rem;
-      margin-top: 0.6rem;
-      font-size: $fontsize;
-      line-height: 20px;
-      text-align: center;
-    }
-
-    @media screen and (max-width: 425px) {
-      margin: 0.6rem;
-      height: 110px;
-      font-size: 16px;
-      line-height: 20px;
+      @media screen and (max-width: 1024px) {
+        width: 270px;
+        padding: 0.5rem;
+        margin-top: 0.6rem;
+        font-size: $fontsize;
+        line-height: 20px;
+        text-align: center;
+      }
+  
+      @media screen and (max-width: 425px) {
+        margin: 0.5rem;
+        height: 110px;
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
-}
+
 .section_service {
   background-color: $bg-color;
   width: 100vw;
@@ -662,11 +664,11 @@ header {
         @include dir(20px, 140px);
 
         @media screen and (max-width: 1024px) {
-          top: -10px;
+          top: 40px;
           left: 110px;
         }
         @media screen and (max-width: 425px) {
-          left: 180px;
+          left: 190px;
         }
       }
     }
@@ -699,11 +701,11 @@ header {
         @include dir(30px, -60px);
 
         @media screen and (max-width: 1024px) {
-          top: 50px;
-          left: 100px;
+          top: 60px;
+          left: 90px;
         }
         @media screen and (max-width: 425px) {
-          top: 60px;
+          top: 50px;
           left: 180px;
         }
       }
@@ -714,9 +716,9 @@ header {
     width: 350px;
 
     @media screen and (max-width: 1024px) {
-      width: 300px;
+      width: 280px;
       order: 2;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     .service__meditation_img {
@@ -1201,99 +1203,113 @@ figure.snip1139 .author h5 {
     .star {
       margin-bottom: 7px;
 
-      @media screen and (max-width: 1328px) {
+      @media screen and (max-width: 1333px) {
+        
         width: 16px;
       }
     }
-
     @media screen and (max-width: 425px) {
       font-size: 15px;
     }
   }
 }
-.block_arrow {
-  position: relative;
-
-  .arrow {
-    position: absolute;
-    top: 270px;
-    right: 140px;
-
-    @media screen and (max-width: 1328px) {
-      top: 130px;
-      right: 5px;
-    }
-
-    @media screen and (max-width: 768px) {
-      top: 140px;
-      right: 90px;
-    }
-
-    @media screen and (max-width: 700px) {
-      display: none;
-    }
-  }
-}
-.export-block_second {
-  display: flex;
-  margin-top: 100px;
-  align-self: flex-start;
-  justify-content: space-evenly;
-  width: 60vw;
-
-  .block__list_export {
-    font-size: 20px;
-    text-align: start;
-    margin: 5px;
-    width: 310px;
-    display: flex;
-    align-items: center;
+  .block_arrow {
     position: relative;
 
-    .star2 {
-      align-self: flex-start;
-      margin-top: 20px;
-
-      @media screen and (max-width: 1328px) {
-        margin-top: -7px;
-        width: 15px;
-      }
-    }
-    .text_lite {
-      font-family: $fontmain;
-      color: $primary-color;
-      font-size: 20px;
-      line-height: 25px;
-      text-align: start;
-      z-index: 1;
-
-      @media screen and (max-width: 700px) {
-        font-size: 16px;
-        margin-top: 3px;
-      }
-    }
-    .ellipse1 {
+    .arrow {
       position: absolute;
-    }
-    .img-ellipse {
-      width: 300px;
-      height: 250px;
-      @media screen and (max-width: 700px) {
-        height: 150px;
+      top: 272px;
+      right: 43%;
+
+      .arrow-img {
+        display: block;
+
+        @media screen and (max-width: 1333px){
+          display: none;
+        }
+      }
+
+      .arrow-img2 {
+        display: none;
+
+        @media screen and (max-width: 1333px){
+          display: block;
+          transform: rotate(-15deg);
+        }
+        @media screen and (max-width: 768px){
+          top: 140px;
+        }
+        @media screen and (max-width: 700px){
+          display: none;
+        }
       }
     }
   }
-  @media screen and (max-width: 1328px) {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    width: 98%;
+
+  .export-block_second {
+    display: flex;
+    margin-top: 110px;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    width: 60vw;
+
+   .block__list_export {
+
+       font-size: 20px;
+       text-align: start;
+       margin: 5px;
+       width: 310px;
+       display: flex;
+       align-items: center;
+       position: relative;
+
+      .star2 {
+        align-self: flex-start;
+        margin-top: 20px;
+
+        @media screen and (max-width: 1333px){
+          margin-top: -2px;
+          width: 15px;
+        }
+
+      }
+      .text_lite {
+        font-family: $fontmain;
+        color: $primary-color;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: start;
+        z-index: 1;
+
+        @media screen and (max-width: 700px) {
+          font-size: 16px;
+          margin-top: 3px;
+        }
+      }
+      .ellipse1 {
+        position: absolute;
+      }
+      .img-ellipse {
+        width: 300px;
+        height: 250px;
+
+          @media screen and (max-width: 700px) {
+          height: 150px;
+          }
+      }
+    }
+    @media screen and (max-width: 1333px) {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      width: 98%;
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+    }
   }
-  @media screen and (max-width: 700px) {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-  }
-}
+  
 /* ПОДГОТОВКА К ВЫВОЗУ конец */
