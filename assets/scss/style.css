@@ -428,14 +428,9 @@ header a:hover {
   padding-top: 8%;
   padding-bottom: 3%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .title {
     font-size: 25px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .title {
-    font-size: 20px;
   }
 }
 
@@ -453,7 +448,7 @@ header a:hover {
   flex-basis: 40%;
 }
 .section_benefit .section__title_benefit .img-girl {
-  width: 100%;
+  width: 97%;
 }
 .section_benefit .section__title_benefit .block_title {
   flex-basis: 55%;
@@ -482,18 +477,8 @@ header a:hover {
   padding-bottom: 0.6rem;
   cursor: pointer;
 }
-@media screen and (max-width: 1024px) {
-  .section_benefit .container_benefit .container__item_benefit .block_details .block__summary_details {
-    font-size: 18px;
-  }
-}
 .section_benefit .container_benefit .container__item_benefit .block_details .block__text_details {
   font-size: 18px;
-}
-@media screen and (max-width: 1024px) {
-  .section_benefit .container_benefit .container__item_benefit .block_details .block__text_details {
-    font-size: 16px;
-  }
 }
 @media screen and (max-width: 1024px) {
   .section_benefit .container_benefit .container__item_benefit .block_details {
@@ -564,8 +549,8 @@ header a:hover {
 @media screen and (max-width: 425px) {
   .service .service__text {
     margin: 0.5rem;
-    height: 110px;
-    font-size: 16px;
+    height: 115px;
+    font-size: 18px;
     line-height: 20px;
   }
 }
@@ -1079,11 +1064,12 @@ figure.snip1139 .author h5 {
 
 .text {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 25px;
 }
 @media screen and (max-width: 425px) {
   .text {
-    font-size: 16px;
+    font-size: 18px;
+    padding: 2%;
   }
 }
 
@@ -1146,11 +1132,6 @@ figure.snip1139 .author h5 {
     width: 16px;
   }
 }
-@media screen and (max-width: 425px) {
-  .block__item_export .box_export {
-    font-size: 15px;
-  }
-}
 
 .block_arrow {
   position: relative;
@@ -1196,7 +1177,6 @@ figure.snip1139 .author h5 {
   width: 60vw;
 }
 .export-block_second .block__list_export {
-  font-size: 20px;
   text-align: start;
   margin: 5px;
   width: 310px;
