@@ -549,6 +549,7 @@ header a:hover {
   padding: 2rem;
   width: 350px;
   height: 200px;
+  z-index: 2;
 }
 @media screen and (max-width: 1024px) {
   .service .service__text {
@@ -562,7 +563,7 @@ header a:hover {
 }
 @media screen and (max-width: 425px) {
   .service .service__text {
-    margin: 0.6rem;
+    margin: 0.5rem;
     height: 110px;
     font-size: 16px;
     line-height: 20px;
@@ -640,13 +641,13 @@ header a:hover {
 }
 @media screen and (max-width: 1024px) {
   .block_service .block__position_service .service-block_second .service__ball_second {
-    top: -10px;
+    top: 40px;
     left: 110px;
   }
 }
 @media screen and (max-width: 425px) {
   .block_service .block__position_service .service-block_second .service__ball_second {
-    left: 180px;
+    left: 190px;
   }
 }
 .block_service .block__position_service .service-block_third {
@@ -686,13 +687,13 @@ header a:hover {
 }
 @media screen and (max-width: 1024px) {
   .block_service .block__position_service .service-block_fourth .service__ball_fourth {
-    top: 50px;
-    left: 100px;
+    top: 60px;
+    left: 90px;
   }
 }
 @media screen and (max-width: 425px) {
   .block_service .block__position_service .service-block_fourth .service__ball_fourth {
-    top: 60px;
+    top: 50px;
     left: 180px;
   }
 }
@@ -702,9 +703,9 @@ header a:hover {
 }
 @media screen and (max-width: 1024px) {
   .block_service .service_img {
-    width: 300px;
+    width: 280px;
     order: 2;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 .block_service .service_img .service__meditation_img {
@@ -1140,7 +1141,7 @@ figure.snip1139 .author h5 {
 .block__item_export .box_export .star {
   margin-bottom: 7px;
 }
-@media screen and (max-width: 1328px) {
+@media screen and (max-width: 1333px) {
   .block__item_export .box_export .star {
     width: 16px;
   }
@@ -1156,30 +1157,40 @@ figure.snip1139 .author h5 {
 }
 .block_arrow .arrow {
   position: absolute;
-  top: 270px;
-  right: 140px;
+  top: 272px;
+  right: 43%;
 }
-@media screen and (max-width: 1328px) {
-  .block_arrow .arrow {
-    top: 130px;
-    right: 5px;
+.block_arrow .arrow .arrow-img {
+  display: block;
+}
+@media screen and (max-width: 1333px) {
+  .block_arrow .arrow .arrow-img {
+    display: none;
+  }
+}
+.block_arrow .arrow .arrow-img2 {
+  display: none;
+}
+@media screen and (max-width: 1333px) {
+  .block_arrow .arrow .arrow-img2 {
+    display: block;
+    transform: rotate(-15deg);
   }
 }
 @media screen and (max-width: 768px) {
-  .block_arrow .arrow {
+  .block_arrow .arrow .arrow-img2 {
     top: 140px;
-    right: 90px;
   }
 }
 @media screen and (max-width: 700px) {
-  .block_arrow .arrow {
+  .block_arrow .arrow .arrow-img2 {
     display: none;
   }
 }
 
 .export-block_second {
   display: flex;
-  margin-top: 100px;
+  margin-top: 110px;
   align-self: flex-start;
   justify-content: space-evenly;
   width: 60vw;
@@ -1197,9 +1208,9 @@ figure.snip1139 .author h5 {
   align-self: flex-start;
   margin-top: 20px;
 }
-@media screen and (max-width: 1328px) {
+@media screen and (max-width: 1333px) {
   .export-block_second .block__list_export .star2 {
-    margin-top: -7px;
+    margin-top: -2px;
     width: 15px;
   }
 }
@@ -1229,7 +1240,7 @@ figure.snip1139 .author h5 {
     height: 150px;
   }
 }
-@media screen and (max-width: 1328px) {
+@media screen and (max-width: 1333px) {
   .export-block_second {
     flex-direction: row-reverse;
     align-items: center;
