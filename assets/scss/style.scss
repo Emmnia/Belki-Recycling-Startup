@@ -737,7 +737,7 @@ header {
       margin: 0;
     }
     @media screen and (max-width: 430px) {
-      padding-bottom: 3rem;
+      padding-bottom: 2rem;
       margin: 0;
     }
   }
@@ -802,7 +802,9 @@ header {
 .awards {
   padding: 2rem;
   @media screen and (max-width: 430px) {
-    padding: 1rem 0;
+    // padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 
