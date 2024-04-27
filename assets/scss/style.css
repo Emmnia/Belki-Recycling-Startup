@@ -144,7 +144,6 @@ html {
   border-radius: 65px;
   background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
   background-size: 300% 100%;
-  moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   text-decoration: none;
@@ -390,7 +389,6 @@ header a:hover {
   border-radius: 65px;
   background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
   background-size: 300% 100%;
-  moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   margin-left: 50%;
