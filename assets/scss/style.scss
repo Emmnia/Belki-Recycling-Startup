@@ -307,10 +307,6 @@ html {
   i {
     margin-right: 10px;
     font-size: 40px;
-
-    &:hover {
-      transform: scale(1.2);
-    }
   }
 
   div {
@@ -328,6 +324,10 @@ html {
   @media screen and (max-width: 768px) {
     text-align: center;
   }
+
+    i:hover {
+      transform: scale(1.2);
+    }
 }
 /* ФУТЕР конец */
 

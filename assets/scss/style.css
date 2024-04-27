@@ -274,9 +274,6 @@ html {
   margin-right: 10px;
   font-size: 40px;
 }
-.footer i:hover {
-  transform: scale(1.2);
-}
 .footer div {
   margin-bottom: 5%;
 }
@@ -288,6 +285,9 @@ html {
   .footer__contact {
     text-align: center;
   }
+}
+.footer__contact i:hover {
+  transform: scale(1.2);
 }
 
 /* ФУТЕР конец */
