@@ -16,7 +16,7 @@ $fontsize: 18px;
   border-radius: 65px;
   background: linear-gradient(to right, #4ab940, #32da32, #24be13, #0f9900);
   background-size: 300% 100%;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -24,7 +24,7 @@ $fontsize: 18px;
 
   &:hover {
     background-position: 100% 0;
-    // moz-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
