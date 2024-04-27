@@ -35,6 +35,18 @@ $fontsize: 18px;
   }
 }
 
+@mixin heading {
+  font-family: $fontmain;
+  font-size: 40px;
+  font-weight: 400;
+  color: $primary-color;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
@@ -62,10 +74,9 @@ html {
   color: $primary-color;
 
   h2 {
+    @include heading();
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 40px;
-    font-weight: 400;
     text-align: center;
   }
 
@@ -203,10 +214,9 @@ html {
   }
 
   .title_gifts {
+    @include heading();
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 40px;
-    font-weight: 400;
     text-align: center;
   }
 
@@ -464,13 +474,11 @@ header {
 
 .title {
   @extend %text;
-  font-size: 40px;
+  @include heading();
+  margin: 0 auto;
   padding-top: 8%;
   padding-bottom: 3%;
-
-  @media screen and (max-width: 767px) {
-    font-size: 25px;
-  }
+  max-width: 90vw;
 }
 .section_benefit {
   background-color: $bg-color;
@@ -491,7 +499,7 @@ header {
     }
 
     .block_title {
-      flex-basis: 55%;
+      flex-basis: 57%;
     }
 
     @media screen and (max-width: 425px) {
@@ -724,12 +732,8 @@ header {
   padding: 2rem 10rem 5rem 10rem;
   background-color: $bg-color;
 
-  h1 {
-    text-align: center;
-    font-family: "Montserrat";
-    color: #542e27;
-    font-size: 40px;
-    font-weight: 400;
+  h2 {
+    @include heading();
     line-height: 50px;
     padding-top: 30px;
     padding-bottom: 3rem;
@@ -825,13 +829,9 @@ header {
 /* ОТЗЫВЫ */
 .section_testimonials {
   padding: 3rem 0;
-  h1 {
+  h2 {
+    @include heading();
     padding-bottom: 1rem;
-    text-align: center;
-    font-family: $fontmain;
-    color: $primary-color;
-    font-size: 40px;
-    font-weight: 400;
     line-height: 50px;
   }
 }
