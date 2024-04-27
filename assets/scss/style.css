@@ -25,11 +25,20 @@ html {
   color: #542e27;
 }
 .section_price h2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 400;
+  color: #542e27;
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .section_price h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
 }
 .section_price .prices {
   margin: auto;
@@ -175,11 +184,20 @@ html {
   }
 }
 .section_gifts .title_gifts {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 400;
+  color: #542e27;
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .section_gifts .title_gifts {
+    font-size: 25px;
+    font-weight: 500;
+  }
 }
 .section_gifts i {
   margin-right: 5px;
@@ -423,13 +441,20 @@ header a:hover {
 }
 
 .title {
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  font-weight: 400;
+  color: #542e27;
+  text-align: center;
+  margin: 0 auto;
   padding-top: 8%;
   padding-bottom: 3%;
+  max-width: 90vw;
 }
 @media screen and (max-width: 767px) {
   .title {
     font-size: 25px;
+    font-weight: 500;
   }
 }
 
@@ -450,7 +475,7 @@ header a:hover {
   width: 97%;
 }
 .section_benefit .section__title_benefit .block_title {
-  flex-basis: 55%;
+  flex-basis: 57%;
 }
 @media screen and (max-width: 425px) {
   .section_benefit .section__title_benefit {
@@ -702,24 +727,30 @@ header a:hover {
   padding: 2rem 10rem 5rem 10rem;
   background-color: #dbf0d9;
 }
-.section_us h1 {
-  text-align: center;
-  font-family: "Montserrat";
-  color: #542e27;
+.section_us h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 400;
+  color: #542e27;
+  text-align: center;
   line-height: 50px;
   padding-top: 30px;
   padding-bottom: 3rem;
 }
+@media screen and (max-width: 767px) {
+  .section_us h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
 @media screen and (max-width: 1200px) {
-  .section_us h1 {
+  .section_us h2 {
     padding-bottom: 1rem;
     margin: 0;
   }
 }
 @media screen and (max-width: 430px) {
-  .section_us h1 {
+  .section_us h2 {
     padding-bottom: 2rem;
     margin: 0;
   }
@@ -813,14 +844,20 @@ header a:hover {
 .section_testimonials {
   padding: 3rem 0;
 }
-.section_testimonials h1 {
-  padding-bottom: 1rem;
-  text-align: center;
+.section_testimonials h2 {
   font-family: "Montserrat", sans-serif;
-  color: #542e27;
   font-size: 40px;
   font-weight: 400;
+  color: #542e27;
+  text-align: center;
+  padding-bottom: 1rem;
   line-height: 50px;
+}
+@media screen and (max-width: 767px) {
+  .section_testimonials h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
 }
 
 .container-testimonials-main {
