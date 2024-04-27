@@ -841,7 +841,7 @@ header a:hover {
 
 /* ОТЗЫВЫ */
 .section_testimonials {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .section_testimonials h2 {
   font-family: "Montserrat", sans-serif;
@@ -858,13 +858,24 @@ header a:hover {
     font-weight: 500;
   }
 }
+@media screen and (max-width: 430px) {
+  .section_testimonials {
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+  }
+}
 
 .container-testimonials-main {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .container-testimonials-main {
+    min-height: 100%;
+  }
 }
 
 .container-testimonials {
@@ -882,6 +893,11 @@ header a:hover {
   position: relative;
   transform-style: preserve-3d;
   animation: slide 0.4s linear;
+}
+@media screen and (max-width: 430px) {
+  .container-testimonials .slide-container .slide {
+    width: 90%;
+  }
 }
 
 @keyframes slide {
@@ -926,6 +942,11 @@ header a:hover {
 .container-testimonials .slide-container {
   display: none;
 }
+@media screen and (max-width: 430px) {
+  .container-testimonials .slide-container {
+    display: flex;
+  }
+}
 
 .container-testimonials .slide-container.active {
   display: block;
@@ -946,6 +967,12 @@ header a:hover {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
+}
+@media screen and (max-width: 430px) {
+  .container-testimonials #next,
+  .container-testimonials #prev {
+    display: none;
+  }
 }
 
 .container-testimonials #next {
