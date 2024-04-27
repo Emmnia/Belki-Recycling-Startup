@@ -345,19 +345,17 @@ html {
 
 header {
   width: 100vw;
+  height: max-content;
 
-  ul {
+
+  nav {
     height: 12vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
     align-items: center;
-    :first-child::before {
-      content: url(../images/leaf-logo.png);
-      position: absolute;
-      left: 2vw;
-    }
+   }
   }
 
   a {
@@ -371,7 +369,7 @@ header {
       text-decoration: underline;
     }
   }
-}
+
 
 /* ХЭДЕР конец */
 
@@ -385,20 +383,14 @@ header {
   grid-template-columns: 2fr 5fr;
   grid-template-rows: repeat(3, 1fr);
 
-  @media screen and (max-width: 768px) {
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
+    
   .first-block__logo {
     grid-column: 1/2;
     grid-row: 1/4;
     img {
       margin-top: 10%;
-      margin-left: 5%;
+      margin-left: 15%;
       max-width: 100%;
       max-height: 100%;
     }
@@ -415,7 +407,7 @@ header {
       line-height: 129%;
       color: $secondary-color;
       text-align: left;
-      margin-left: 3vw;
+      margin-left: 4vw;
     }
   }
 
@@ -429,7 +421,7 @@ header {
       line-height: 129%;
       color: $primary-color;
       text-align: left;
-      margin-left: 13.5%;
+      margin-left: 15.5%;
     }
   }
 
@@ -440,13 +432,16 @@ header {
 }
 
 .button_leave-application {
-  @include button();
+ @include button();
   margin-left: 50%;
   text-transform: uppercase;
   font-size: 20px;
-  height: 12vh;
+  height: 15vh;
   width: 17vw;
+  text-decoration: none;
 }
+
+
 
 /* ПЕРВЫЙ БЛОК конец */
 
