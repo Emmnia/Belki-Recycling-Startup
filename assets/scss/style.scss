@@ -278,6 +278,7 @@ html {
   right: 10px;
   text-decoration: none;
   color: rgb(15, 153, 0, 0.5);
+  z-index: 4;
 
   &:hover {
     color: $accent-color2;
