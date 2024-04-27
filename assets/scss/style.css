@@ -322,8 +322,7 @@ header nav {
   list-style: none;
   align-items: center;
 }
-
-a {
+header a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -331,7 +330,7 @@ a {
   line-height: 250%;
   color: #263633;
 }
-a:hover {
+header a:hover {
   text-decoration: underline;
 }
 
