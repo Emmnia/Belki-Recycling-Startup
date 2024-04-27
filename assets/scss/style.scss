@@ -398,12 +398,14 @@ header {
     grid-column: 2/3;
     grid-row: 1/2;
     h1 {
-      font-family: $fontmain;
-      font-weight: 700;
+      font-family: "Comic Neue", cursive;
+      font-weight: 300;
+      font-style: normal;
       font-size: 3rem;
       line-height: 129%;
       color: $secondary-color;
-      text-align: center;
+      text-align: left;
+      margin-left: 3vw;
     }
   }
 
