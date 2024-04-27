@@ -475,7 +475,7 @@ header a:hover {
   width: 97%;
 }
 .section_benefit .section__title_benefit .block_title {
-  flex-basis: 57%;
+  flex-basis: 60%;
 }
 @media screen and (max-width: 425px) {
   .section_benefit .section__title_benefit {
