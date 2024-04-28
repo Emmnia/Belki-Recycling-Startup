@@ -713,7 +713,6 @@ header a:hover {
 /* О НАС */
 .section_us {
   padding: 2rem 10rem 5rem 10rem;
-  background-color: #dbf0d9;
 }
 .section_us h2 {
   font-family: "Montserrat", sans-serif;
@@ -780,6 +779,19 @@ header a:hover {
   color: #542e27;
   font-size: 1.2em;
 }
+.us_container .us_container__content .progress {
+  position: relative;
+}
+.us_container .us_container__content .progress::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -5px;
+  width: 208px;
+  height: 55px;
+  background-image: url(../images/ellipse-big.png);
+  z-index: -1;
+}
 @media screen and (max-width: 1200px) {
   .us_container .us_container__content {
     padding: 4rem 0rem;
@@ -803,6 +815,34 @@ header a:hover {
 
 .txt-top {
   padding-bottom: 1rem;
+}
+.txt-top .deco1 {
+  position: relative;
+}
+.txt-top .deco1::before {
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: 82px;
+  height: 49px;
+  background-image: url(../images/circle-big.png);
+  z-index: -1;
+}
+
+.deco2 {
+  position: relative;
+}
+
+.deco2::after {
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  width: 82px;
+  height: 49px;
+  background-image: url(../images/circle-big.png);
+  z-index: -1;
 }
 
 .awards {
