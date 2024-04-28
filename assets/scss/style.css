@@ -867,9 +867,9 @@ header a:hover {
   grid-area: us_container__img;
 }
 .us_container .us_container__img img {
-  width: 350px;
+  max-width: 350px;
   height: 450px;
-  border-radius: 50%;
+  border-radius: 30px;
   box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
   display: block;
 }
