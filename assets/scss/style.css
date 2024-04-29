@@ -325,12 +325,20 @@ header nav {
 }
 @media screen and (max-width: 768px) {
   header nav {
-    width: -moz-fit-content;
-    width: fit-content;
-    display: inline;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav_item {
+    margin-top: -6px;
+    margin-bottom: -6px;
+    font-size: 0.9rem;
   }
 }
 header a {
@@ -358,19 +366,23 @@ header a:hover {
 @media screen and (max-width: 768px) {
   .first-block {
     width: 100vw;
-    height: 800px;
+    height: 700px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1120px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .first-block {
     display: flex;
-    width: 100%;
-    height: 800px;
+    width: 100vw;
+    height: 730px;
     flex-direction: column;
-    align-items: center;
+  }
+}
+@media screen and (max-width: 449px) {
+  .first-block {
+    height: 530px;
   }
 }
 
@@ -387,24 +399,35 @@ header a:hover {
 }
 .first-block__logo img {
   margin-top: 10%;
-  margin-left: 15%;
+  margin-left: 13%;
   max-width: 100%;
   max-height: 100%;
 }
 @media screen and (max-width: 768px) {
   .first-block__logo img {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 48%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2vh;
+    margin-top: 2.5vh;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1120px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .first-block__logo img {
+    max-width: 40%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3vh;
+  }
+}
+@media screen and (max-width: 449px) {
+  .first-block__logo img {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
   }
 }
 
@@ -419,7 +442,7 @@ header a:hover {
   }
 }
 .first-block__h1 h1 {
-  font-family: "Comic Neue", cursive;
+  font-family: "Comic Neue", cursive, "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 3rem;
@@ -431,9 +454,23 @@ header a:hover {
 @media screen and (max-width: 768px) {
   .first-block__h1 h1 {
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     margin: auto;
-    padding-top: 5%;
+    margin-top: 2vh;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .first-block__h1 h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 3vh;
+  }
+}
+@media screen and (max-width: 449px) {
+  .first-block__h1 h1 {
+    text-align: center;
+    font-size: 1.78rem;
+    margin-top: 4vh;
   }
 }
 
@@ -450,23 +487,30 @@ header a:hover {
 .first-block__h2 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   line-height: 129%;
   color: #542e27;
   text-align: left;
-  margin-left: 15.5%;
+  margin-left: 18%;
 }
 @media screen and (max-width: 768px) {
   .first-block__h2 h2 {
-    font-size: 2rem;
+    font-size: 1.35rem;
     text-align: left;
-    margin-left: 15%;
-    margin-top: 7%;
+    margin-left: 10%;
+    margin-bottom: 5vh;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1120px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .first-block__h2 h2 {
     font-size: 1.7rem;
+    margin-top: 2vh;
+  }
+}
+@media screen and (max-width: 449px) {
+  .first-block__h2 h2 {
+    font-size: 1.25rem;
+    margin-top: 1.7vh;
   }
 }
 
@@ -478,13 +522,6 @@ header a:hover {
   .first-block__button {
     grid-column: 1/2;
     grid-row: 4/5;
-    align-content: center;
-    margin-right: 30%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1120px) {
-  .first-block__button {
-    margin-top: 7%;
   }
 }
 
@@ -500,9 +537,10 @@ header a:hover {
   background-size: 300% 100%;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  margin-left: 50%;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  margin-left: 50%;
+  margin-top: 12%;
+  font-size: 1.1rem;
   height: 15vh;
   width: 17vw;
   text-decoration: none;
@@ -513,6 +551,24 @@ header a:hover {
 }
 .button_leave-application:active {
   box-shadow: rgba(15, 153, 0, 0.3) 3px 3px 3px 3px;
+}
+@media screen and (max-width: 768px) {
+  .button_leave-application {
+    margin-left: 37%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .button_leave-application {
+    position: relative;
+    margin-left: 70%;
+  }
+}
+@media screen and (max-width: 449px) {
+  .button_leave-application {
+    font-size: 0.74rem;
+    height: 14vh;
+    width: 15vw;
+  }
 }
 
 /* ПЕРВЫЙ БЛОК конец */
