@@ -3,6 +3,10 @@
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Comic";
+  src: url(../fonts/comici.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -156,6 +160,7 @@ html {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   text-decoration: none;
+  max-width: 80%;
 }
 .values .btn:hover {
   background-position: 100% 0;
@@ -442,7 +447,7 @@ header a:hover {
   }
 }
 .first-block__h1 h1 {
-  font-family: "Comic Neue", "Montserrat", sans-serif;
+  font-family: "Comic", "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 3rem;

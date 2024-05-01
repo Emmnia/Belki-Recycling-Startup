@@ -52,6 +52,11 @@ $fontsize: 18px;
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: "Comic";
+  src: url(../fonts/comici.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -192,6 +197,7 @@ html {
   .btn {
     @include button();
     text-decoration: none;
+    max-width: 80%;
   }
 
   .values__text-button {
@@ -483,7 +489,7 @@ flex-direction: column;
       grid-row: 2/3;
     }
     h1 {
-      font-family: "Comic Neue", $fontmain;
+      font-family: "Comic", $fontmain;
       font-weight: 300;
       font-style: normal;
       font-size: 3rem;
