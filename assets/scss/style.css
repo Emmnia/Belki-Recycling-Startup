@@ -929,10 +929,14 @@ header a:hover {
 }
 .us_container .us_container__img img {
   max-width: 350px;
-  height: 450px;
   border-radius: 30px;
   box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
   display: block;
+}
+@media screen and (max-width: 430px) {
+  .us_container .us_container__img img {
+    max-width: 80vw;
+  }
 }
 .us_container .us_container__content {
   grid-area: us_container__content;
