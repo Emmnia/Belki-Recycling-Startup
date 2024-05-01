@@ -928,8 +928,7 @@ header a:hover {
   grid-area: us_container__img;
 }
 .us_container .us_container__img img {
-  max-width: 350px;
-  height: 450px;
+  max-width: 80vw;
   border-radius: 30px;
   box-shadow: 4px 4px 5px 0 rgba(84, 46, 39, 0.7);
   display: block;
