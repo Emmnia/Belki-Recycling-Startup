@@ -35,8 +35,8 @@ If you’d like to run the project locally, follow these steps:
 
 Run the following command in your terminal:
 ```bash
-git clone https://github.com/oxanamar/Responsive-website-for-Recycling-Startup-Belki.git
-cd Responsive-website-for-Recycling-Startup-Belki
+git clone https://github.com/oxanamar/Recycling-Startup-Belki.git
+cd Recycling-Startup-Belki
 ```
 
 ### Step 2: Open the Project
